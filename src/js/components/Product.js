@@ -2,7 +2,7 @@ import React from 'react'
 
 const Product = ({name , img , price}) => {
     const AddToCart = (event) => {
-        alert("hello")
+        alert(`${name} has been added to the cart.`)
     }
     return (
         <div className="detailed-card">
