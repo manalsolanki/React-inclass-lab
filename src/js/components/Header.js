@@ -1,5 +1,5 @@
 import React from "react"
-
+import Logo from '../../img/logo1.png'
 
 const Header = () => {
     return(
@@ -7,7 +7,7 @@ const Header = () => {
 		<nav className="nav-container">
 			<ul className="top-navigation-bar">
 				<div className="navigation-select">
-					<a href="/"><img src="/img/logo1.png" alt="Amazon-logo" className="logo"/> </a>
+					<a href="/"><img src = {Logo} alt="Amazon-logo" className="logo"/> </a>
 					<li><input type="text" placeholder="Search " className="top-search hide-content"/></li>
 				</div>
 

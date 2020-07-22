@@ -8,6 +8,8 @@ import ProductList from "./js/components/ProductList";
 import './css/index.css';
 import './css/default.css';
 import './css/reset.css';
+
+
 const App = () => {
 	return (
     < >
