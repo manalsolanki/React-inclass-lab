@@ -1,0 +1,204 @@
+/* This Css file consist of the common part like header and the footer used over all the pages. */
+body{
+    font-family:  'Montserrat',sans-serif;
+    background-color:white;
+   
+    
+}
+
+/* Header CSS */
+.page{
+  position: relative;
+  width: 100vw;
+  overflow-x: hidden
+}
+.nav-container{
+  box-shadow: 0px 0px 14px 3px rgba(181,177,177,1);
+}
+.nav-container ul{
+  margin: 0em;
+}
+.top-navigation-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding : 0.5em 2em;
+    margin: 0em; 
+}
+
+.navigation-select{
+    display: flex;
+    align-items: center;
+}
+
+.top-search{
+    margin-left: 1em;   
+}
+.logo{
+    width:160px;
+    max-width: none;
+}
+.bottom-search{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+.dropbtn {
+    background-color:white;
+    color:#40688f;
+    padding: 1em;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    display: flex;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 0em 1em ;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.arrow{
+    transition: all 0.5s;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color:rgba(80, 122, 164 , 0.5);
+ 
+}
+.dropdown:hover  .arrow{
+    color: black;
+   transform: rotate(180deg);
+   
+}
+
+/* side bar Css */
+.side-menu{
+  height: auto;
+  position: absolute;
+  z-index: 1;
+  width:250px;
+  background-color:rgba(80,122,164,0.9);
+  right: -250px;
+  transition: all ease 0.3s;
+}
+
+.show-side-menu{
+  right:  0;
+}
+.side-menu-list{
+  padding: 1em;
+  font-weight: bolder;
+  color: white;
+
+  
+}
+
+
+
+
+
+
+
+/* Footer Css */
+.container-footer{
+    background-color:#507aa4;
+    display: grid;
+    color: #f1f3f6;
+    grid-template-columns:repeat(4,1fr) ;
+    /*padding: 1em; */
+    align-items: flex-start;
+    margin-bottom: 0em;
+    padding: 0em 2em;
+}
+.footer-elements{
+    margin: 1em;
+}
+
+footer a{
+    text-decoration: none;
+    color:#b5b1b1;
+    font-family:'Roboto', sans-serif;
+}
+.bottom-footer{
+    display: flex;
+    padding:0em 2em;
+    background-color:#40688f;
+    justify-content: space-between;
+    margin:0em;
+}
+.item-inline{
+    display: inline;  
+}
+
+
+.show-content{
+  display:none;
+}
+
+
+@media(max-width : 768px){
+
+  body{
+    position: relative;
+  }
+  .logo{
+    width: 130px;
+  }
+  .hide-content{
+    display: none;
+  }
+  .show-content{
+    display: block;
+  }
+  .dropdown{
+    margin: 0em;
+  }
+  .top-search{
+    margin: 0em 1em 1em 0em;
+  }
+
+
+
+
+.container-footer{
+  grid-template-columns: repeat(2,1fr);
+}
+  .bottom-footer{
+    display:block;
+    padding: 1em 2em;
+    text-align: center;
+  }
+}
+
+@media(max-width :576px){
+  .container-footer{
+    grid-template-columns: repeat(1,1fr);
+    text-align: center;
+  }
+}
